@@ -34,6 +34,30 @@ builder.Services.AddDbContext
 AllowedHosts - * - все
 ConnectionStrings - свою БД student.db
 
+14) program.cs - соединение с БД
+builder.Services.AddDbContext<AppDbContext>(options=>options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection")));
+
+15) Create Controller в котором будут прописаны методы Get, Post, Delete, 
+16) Добавляем в program.cs метод AddControllers()
+17) add app.MapControllers() в program.cs 
+app.MapControllers() ASP.NET Core настраивает маршруты для всех контроллеров, зарегистрированных в приложении, и связывает их с соответствующими обработчиками запросов
+18) restart api
+19) Когда вы добавляете свойство DbSet<Student> Students в AppDbContext, EF Core использует его для создания таблицы Students в вашей базе данных. Кроме того, он предоставляет методы для выполнения CRUD-операций (Create, Read, Update, Delete) над данными этой таблицы.
+
+20) миграция бд. Terminal: dotnet ef migrations add Initial
+если ошибка - 
+dotnet tool install --global dotnet-ef
+dotnet ef migrations add Initial
+
+21) создаем ДБ
+dotnet ef database update
+
+22) extensions -> sqlite -> install
+23) cmd + shift + p -> sqlite open database -> выбор БД 
+
+
+
+
 
 
 
