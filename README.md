@@ -9,7 +9,7 @@ Create api for angular project
 4) dotnet --list-sdks #look version
 5) In VSC go to "extensions" to choose:
     C#
-    C# DV Kit
+    C# Dev Kit
     NuGet Gallery
 
 6) console: 
