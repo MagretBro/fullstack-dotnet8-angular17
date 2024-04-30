@@ -10,7 +10,7 @@ Create api for angular project
 5) In VSC go to "extensions" to choose:
     C#
     C# Dev Kit
-    NuGet Gallery
+    NuGet Gallery       cmd + shift + p
 
 6) console: 
 dotnet new webapi -o Api
@@ -21,6 +21,7 @@ dotnet watch run
 8) Create Models (Api level)
         - classes (Student.cs)      # create structure 
 9) Create Data -> AppDbContext.cs
+Внутри него создаю конструктор - ctor
 10) nutget -> cmd+shift+p -> ef core
                           -> ef core.tools
 11) program.cs - точка входа в App, файл где прописаны настройки сервиса, обработчика запросов, загрузка конфигурацион данных из appsettings.json
