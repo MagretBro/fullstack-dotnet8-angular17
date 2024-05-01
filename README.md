@@ -54,6 +54,10 @@ dotnet ef database update
 
 22) extensions -> sqlite -> install
 23) cmd + shift + p -> sqlite open database -> выбор БД 
+24) должен появиться sqlite explorer - там БД
+25) инициализируем БД: dotnet ef database update
+26) в studentsController создаем конструктор (ctor)
+26) Прописываем метод HttpGet
 
 
 
