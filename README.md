@@ -59,16 +59,31 @@ dotnet ef database update
 26) в studentsController создаем конструктор (ctor)
 26) Прописываем метод HttpGet
 
+27) Открытие sql explorer - Для влючение sql DB - cmd+shift+P - выбор SQLite - выбор нужной BD
+
+FRONTEND
+
+28) Download Nodejs 20
+29) npm install -g @angular/cli         это глобально--
+npm install @angular/cli --save-dev     это локально 
+Установка 17 версии
+30) add
+Angular langyage Service
+Angular Schematics
+Angular File Changer
+Material Icon Theme
+
+В отдельном баше
+31) ng new client
+
+установка Tailwind  и его расширений
+https://tailwindcss.com/docs/installation
+
+32) Создание компонентов и объектов - Service, Students, types
 
 
 
 
-
-
-
--- Frontend
-
- Material Icon Theme
 
 
 

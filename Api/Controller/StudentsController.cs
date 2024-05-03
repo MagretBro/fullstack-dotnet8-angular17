@@ -32,7 +32,7 @@ namespace Api.Controller
         {
             var student = await _context.Students.FindAsync(id);
 
-            if(student is nuint)
+            if(student is null)
                 return NotFound();
             return Ok(student);
         }
@@ -88,7 +88,7 @@ namespace Api.Controller
 
             var result = await _context.SaveChangesAsync();
             if (result > 0)
-                return Ok();           
+                return Ok("Student is deleted");           
             else
                 {return BadRequest("Unable 2DEL");}
             
