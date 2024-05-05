@@ -80,7 +80,7 @@ Material Icon Theme
 https://tailwindcss.com/docs/installation
 
 32) Создание компонентов и объектов - Service, Students, types
-
+33)  ng g c students --standalone --dry-run
 
 
 
