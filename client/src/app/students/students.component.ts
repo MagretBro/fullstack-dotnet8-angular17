@@ -13,10 +13,19 @@ import { ToastrService } from 'ngx-toastr';
   templateUrl: './students.component.html',
   styleUrls: ['./students.component.css']
 })
+
 export class StudentsComponent implements OnInit {
   students$!:Observable<Student[]>
   toastrService! : ToastrService;
   studentService = inject(StudentsService);
+// export class StudentsComponent implements OnInit {
+//   students$!: Observable<Student[]>;
+  
+//   constructor(
+//     private studentService: StudentsService,
+//     private toastrService: ToastrService
+//   ) {}
+
 
 
   ngOnInit(): void {
