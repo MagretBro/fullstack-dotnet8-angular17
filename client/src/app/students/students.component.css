@@ -10,9 +10,11 @@
     width: 350px;
     height: 130px;
     display: flex;
-    /* background: red; */
     margin: 10px;
     justify-content: space-between;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 0.375rem;
+    padding: 0.75rem; 
 
 }
 
@@ -30,7 +32,7 @@
 
 .card-main {
     height: 100%;
-    background: rgb(54, 95, 77);
+    /* background: rgb(54, 95, 77); */
     flex-grow: 1;
     display: flex;
     flex-direction: column;
@@ -39,7 +41,7 @@
 .name-wr {
     height: 40%;
     width: 100%;
-    background: rgb(243, 229, 33);
+    /* background: rgb(243, 229, 33); */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -56,7 +58,7 @@
 
 .email-icon {
     width: 50px;
-    background: rgb(57, 153, 140);
+    /* background: rgb(57, 153, 140); */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -66,7 +68,7 @@
 
 .email-text {
     flex-grow: 1;
-    background: rgb(67, 79, 84);
+    /* background: rgb(67, 79, 84); */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -83,7 +85,7 @@
 
 .phone-icon {
     width: 50px;
-    background: rgb(57, 153, 140);
+    /* background: rgb(57, 153, 140); */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -95,7 +97,7 @@
 
 .phone-text {
     flex-grow: 1;
-    background: rgb(207, 93, 16);
+    /* background: rgb(207, 93, 16); */
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -108,7 +110,7 @@
 .right-side {
     width: 15%;
     height: 100%;
-    background: rgb(219, 86, 217);
+    /* background: rgb(219, 86, 217); */
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
