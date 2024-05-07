@@ -87,10 +87,14 @@ namespace Api.Controller
             _context.Students.Remove(student);
 
             var result = await _context.SaveChangesAsync();
-            if (result > 0)
-                return Ok("Student is deleted");           
-            else
-                {return BadRequest("Unable 2DEL");}
+            if (result > 0) 
+            {
+                return Ok();   
+                         
+            } else {
+
+                return BadRequest("Unable 2DEL");
+            }
             
         }
 

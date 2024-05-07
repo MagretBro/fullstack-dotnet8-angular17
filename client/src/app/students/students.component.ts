@@ -16,20 +16,21 @@ import { ToastrService } from 'ngx-toastr';
 
 export class StudentsComponent implements OnInit {
   students$!:Observable<Student[]>
-  toastrService! : ToastrService;
-  studentService = inject(StudentsService);
+  // toastrService! : ToastrService;
+  // studentService = inject(StudentsService);
 // export class StudentsComponent implements OnInit {
 //   students$!: Observable<Student[]>;
   
-//   constructor(
-//     private studentService: StudentsService,
-//     private toastrService: ToastrService
-//   ) {}
+  constructor(
+    private studentService: StudentsService,
+    private toastrService: ToastrService
+  ) {}
 
 
 
   ngOnInit(): void {
     this.getStudents();
+  
   }
 
   delete(id:number){
@@ -38,11 +39,14 @@ export class StudentsComponent implements OnInit {
     this.studentService.deleteStudent(id).subscribe({
       next:(response)=>{
         this.getStudents();
-        this.toastrService.success("is Deleted")
+        if(this.toastrService){
+          this.toastrService.success("is Deleted")
+        }
+       
       },
       error: err => {
         console.log(err);
-        this.toastrService.success("is Deleted")
+        //this.toastrService.success("is Deleted")
 
       }
     })
